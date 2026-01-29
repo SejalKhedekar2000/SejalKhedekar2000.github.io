@@ -155,7 +155,7 @@ export const education = [
     school: "Arizona State University",
     degree: "M.S. Software Engineering",
     dates: "Aug 2024 – May 2026",
-    details: "GPA: 3.90/4.0 (one version shows 3.78/4.0)."
+    details: "GPA: 3.90/4.0"
   },
   {
     school: "University of Mumbai",

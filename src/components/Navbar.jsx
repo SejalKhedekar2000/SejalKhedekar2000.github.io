@@ -18,6 +18,8 @@ export default function Navbar() {
           <NavLink to="/experience" className={linkClass}>Experience</NavLink>
           <NavLink to="/projects" className={linkClass}>Projects</NavLink>
           <NavLink to="/resume" className={linkClass}>Resume</NavLink>
+          <NavLink to="/education" className={linkClass}>Education</NavLink>
+
         </nav>
       </div>
     </header>
