@@ -3,12 +3,38 @@ export const profile = {
   location: "Tempe, AZ",
   phone: "623-759-2095",
   email: "skhedek2@asu.edu",
-  linkedin: "https://linkedin.com/in/sejalkhedekar",
+  linkedin: "https://www.linkedin.com/in/sejalkhedekar/",
   github: "https://github.com/SejalKhedekar2000",
   headline: "Software Engineer (Backend / Full Stack) | .NET, Java, SQL, REST APIs",
   target: "Seeking Backend / Full-Stack Software Engineering Intern or New Grad roles.",
-  summary:
-    "Software Engineer with 2+ years of experience at Tata Consultancy Services building enterprise web applications using ASP.NET MVC/.NET, Java, SQL, and REST APIs. Strong in CI/CD automation (Jenkins, SonarQube), database development (PL/SQL), and Agile delivery. Currently pursuing an M.S. in Software Engineering at Arizona State University.",
+
+  // ✅ Structured About content (easy to render nicely)
+  about: {
+    title: "About Me",
+    intro: [
+      "Hi, I’m Sejal Khedekar, a Software Engineer with an M.S. in Software Engineering from Arizona State University and 2+ years of industry experience building scalable backend and full-stack systems across enterprise environments.",
+      "I bring hands-on experience transforming complex requirements into production-ready applications—working across APIs, cloud platforms, databases, and frontend interfaces using Java, C#, Python, React, and SQL. My journey spans academic projects and professional roles in India and the U.S., where I’ve contributed to reliable releases, modernized legacy systems, and built developer-focused solutions."
+    ],
+    lessonsTitle: "Key lessons shaped by my academic and industry journey",
+    lessons: [
+      "Clean architecture and thoughtful system design matter more than just writing code.",
+      "Reliable APIs and backend services are the backbone of real-world scalability.",
+      "CI/CD, testing, and code quality gates directly impact release stability.",
+      "Strong collaboration across product, QA, and engineering drives successful delivery.",
+      "Cloud platforms aren’t just infrastructure—they’re tools for performance, automation, and impact."
+    ],
+    proudTitle: "What I’m proud of",
+    proud: [
+      "Delivering 10+ enterprise features and resolving 30+ production issues by improving backend logic, CI/CD pipelines, and database workflows.",
+      "Leading a legacy UI modernization effort to improve maintainability and cross-browser compatibility.",
+      "Building ontology-driven healthcare and Agile simulation platforms during my graduate studies to support decision-making and learning at scale."
+    ],
+    outside:
+      "Outside of work, you’ll usually find me exploring new technologies, refining side projects, practicing yoga, or unwinding with music and a good cup of chai. I also follow the Art of Living practices, which help me stay grounded, focused, and balanced.",
+    closing:
+      "I’m always open to connecting with engineers, product builders, and innovators — let’s build impactful software together."
+  },
+
   tags: ["ASP.NET/.NET", "Spring Boot", "REST APIs", "CI/CD", "Oracle PL/SQL", "React"]
 };
 
@@ -53,16 +79,19 @@ export const experience = [
 
 export const projects = [
   {
-    name: "Health Revamp – Disease Ontology Platform",
-    tech: "Azure, GraphDB, SPARQL, Flutter/React",
-    dates: "Jan 2025 – May 2025",
-    bullets: [
-      "Built an ontology-driven healthcare platform on Azure enabling symptom-based diagnosis using SPARQL queries over a graph database.",
-      "Designed and integrated structured medical knowledge using GraphDB and OntoRefine to support decision-support workflows.",
-      "Developed frontend interfaces using Flutter/React to visualize diagnosis results and ontology-driven insights."
-    ],
-    link: "https://github.com/1110tanmay/Healthcare-Revamp"
-  },
+  name: "Disease Ontology Platform — Healthcare Knowledge Graph",
+  tech: "Flutter/Dart, Flask (Python), SPARQL, GraphDB, Microsoft Azure",
+  dates: "Jan 2025 – May 2025",
+  bullets: [
+    "Designed and developed a scalable ontology-driven healthcare platform integrating multiple datasets into a unified disease knowledge graph.",
+    "Built a Flutter frontend enabling interactive querying through dynamic filters and visual exploration of disease information.",
+    "Implemented a Flask backend to generate SPARQL queries based on user input and parse JSON responses from GraphDB.",
+    "Deployed GraphDB on Microsoft Azure to support efficient, scalable querying across attributes such as age, diagnosis, and geographic region.",
+    "Delivered a full-stack system supporting healthcare professionals and researchers in analyzing disease relationships and trends."
+  ],
+  link: "https://rushadw.github.io/asuteam13-healthcare-revamp/"
+},
+
   {
     name: "Protocol Racer — HTTP/2 vs HTTP/3 (QUIC)",
     tech: "Java, Spring Boot, REST APIs, React, Vue",
@@ -84,7 +113,33 @@ export const projects = [
     link: "https://github.com/SER515asu/ser515-nameless"
   },
   {
-    name: "Job Tracker API (In Progress)",
+  name: "SYNLang — Custom Language Interpreter",
+  tech: "Python, ANTLR4, Git/GitHub",
+  dates: "Jan 2025 – May 2025",
+  bullets: [
+    "Designed and implemented a custom programming language interpreter using Python and ANTLR4, supporting lexical analysis, parsing, and execution of user-defined programs.",
+    "Built grammar rules and parse trees to evaluate expressions and statements, enabling execution of custom language constructs.",
+    "Version-controlled the project using Git/GitHub and collaborated on feature development and testing workflows."
+  ],
+  link: "https://github.com/hpant5/SER502-SYNlang-Team4"
+},
+{
+  name: "Campus Quest AR — Mixed Reality Campus Exploration Game",
+  tech: "Unity, C#, AR Foundation, Geolocation, 3D Physics, Mobile AR",
+  dates: "Aug 2024 – Dec 2024",
+  bullets: [
+    "Built a mixed-reality mobile game using Unity and AR Foundation that transforms a university campus into an interactive quest environment with location-based challenges.",
+    "Implemented geolocation-based quest markers tied to real-world landmarks, enabling players to physically navigate campus and unlock AR puzzles and mini-games.",
+    "Developed physics-based challenges, 3D object interactions, trivia, and riddle mechanics to drive progression toward unlocking the final Campus Gate.",
+    "Designed core gameplay loops involving exploration, puzzle-solving, and reward-based progression using digital keys, badges, and tokens.",
+    "Collaborated in a team of five to architect gameplay flow, AR interactions, and UI logic, with extensibility for future features such as adaptive difficulty and procedural quest generation."
+  ],
+  link: "https://github.com/mahaponraj/CampusQuestAR"
+},
+
+
+  {
+    name: "Job Tracker API ",
     tech: "Spring Boot, PostgreSQL, JWT, Docker",
     dates: "Jan 2026 – Present",
     bullets: [
